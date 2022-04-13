@@ -1,5 +1,4 @@
-// importing component
-import Button from "./button"
+
 
 // importing styled components
 import { HeroStats, HeroTxtButton, HeroWrapper } from "./styled/Hero.styled";
@@ -23,7 +22,7 @@ export default function Hero () {
             </HeroTxtButton>
 
             <div>
-                {/* <img src={mobileHeroImg} /> */}
+                <img src={mobileHeroImg} />
                 <img src={dskHeroImg} />
             </div>
             

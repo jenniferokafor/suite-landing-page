@@ -1,14 +1,16 @@
-// importing svgs and images
-import { ReactComponent as Logo } from '../assets/img-and-logo/logo.svg';
+import Logo from './svg/logo';
 
 // importing components
-import Button from './button';
+
+import { StyledHeader } from './styled/Header.styled';
+import { HeaderBtn } from './styled/Button.styled';
+
 
 export default function Header () {
     return (
-        <header>
-            <Logo className='logo'/>
-            <Button />
-        </header>
+        <StyledHeader>
+            <Logo />
+            <HeaderBtn>Request Beta Access</HeaderBtn>
+        </StyledHeader>
     )
 }

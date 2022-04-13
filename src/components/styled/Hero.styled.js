@@ -12,9 +12,26 @@ export const HeroWrapper = styled.div`
     div img {
         max-width: 21.438rem;
 
+        @media (max-width: 48rem) {
+            &:last-child {
+                display: none;
+            }
+        }
+
+        @media (min-width: 48rem) {
+            &:first-child {
+                display: none;
+            }
+
+            &:last-child {
+                display: block;
+            }
+        }
+
         @media (min-width: 80rem) {
             max-width: 21.875rem;
         }
+
     }
 
     @media (min-width: 48rem) {
