@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeroWrapper = styled.div`
     background-color: ${({theme}) => theme.clr2};
-    padding: 0 1rem 17rem 1rem;
+    padding: 2rem 1rem 17rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +13,7 @@ export const HeroWrapper = styled.div`
         max-width: 21.438rem;
 
         @media (min-width: 80rem) {
-            
+            max-width: 21.875rem;
         }
     }
 
@@ -27,10 +27,10 @@ export const HeroWrapper = styled.div`
         align-content: center;
     }
 
-    @media (min-width: 80rem}) {
-       padding: 0 10.313rem 0 10.313rem;
+    @media (min-width: 80rem) {
+       padding: 0 10.313rem 9.625rem 10.313rem;
        display: grid;
-       grid-template-columns: 38.25rem 21.875rem 11.875rem;
+       grid-template-columns: 31.25rem 21.875rem 11.875rem;
        grid-template-rows: 1fr;
        gap: 0;
        justify-content: start;
@@ -38,12 +38,14 @@ export const HeroWrapper = styled.div`
 `
 
 export const HeroTxtButton = styled.div`
+    max-width: 21.469rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    position: relative;
 
     @media (min-width: 80rem) {
-        margin-left: -4rem;
+        margin-left: 0rem;
     }
 
     h1 {
@@ -58,7 +60,7 @@ export const HeroTxtButton = styled.div`
         @media (min-width: 48rem) {
             font-size: 3.5rem;
             line-height: 4rem;
-            width: 35.813rem;
+            width: 34.813rem;
             z-index: 10;
         }
 

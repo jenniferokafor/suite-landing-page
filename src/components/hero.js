@@ -8,6 +8,7 @@ import { Btn, HeroBtn } from "./styled/Button.styled";
 //importing images
 import mobileHeroImg from '../../src/assets/img-and-logo/image-hero-landscape@2x.png';
 import dskHeroImg from '../../src/assets/img-and-logo/image-hero-portrait@2x.png';
+import HeroBlur from "./svg/heroBlur";
 
 export default function Hero () {
     return (
@@ -18,6 +19,7 @@ export default function Hero () {
                 </h1>
                 <p>Our marketing and sales automations help you scale your outreach to get more leads for your company.</p>
                 <HeroBtn>Request Beta Access</HeroBtn>
+                <HeroBlur/>
             </HeroTxtButton>
 
             <div>

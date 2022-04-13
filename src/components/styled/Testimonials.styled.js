@@ -9,7 +9,11 @@ background: linear-gradient(180deg, ${({theme}) =>theme.clr2} 50%, ${({theme}) =
 
     @media (min-width: 80rem) {
         padding: 0 10.25rem;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
 `
 
 export const StyledTestimonialMain = styled.div`
@@ -25,11 +29,12 @@ export const StyledTestimonialMain = styled.div`
     
 
     @media (min-width: 80rem) {
+        width: 55rem;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         gap: 2rem;
-        padding: 0 7.813rem 0 8rem; 
+        padding: 0 8rem 0 8rem; 
     }
 
     img {
